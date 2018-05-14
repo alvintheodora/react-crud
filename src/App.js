@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from './button';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   constructor(props){
@@ -91,6 +92,9 @@ class App extends Component {
         <div>
           {this.renderSpan()}
         </div>
+
+          <Link to={`${process.env.PUBLIC_URL}/page2`}>Go to page 2</Link>
+
       </div>
     );
   }
